@@ -1,8 +1,41 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Home | Kape Kanto{% endblock %}
 
 {% block content %}
-    <h1>Welcome to Kape Kanto</h1>
-    <p>Your one-stop shop for the best coffee in town!</p>
-{% endblock %}
+<section class="hero">
+    <div>
+    <h1>Coffee at the corner of your day.</h1>
+    <p class="lead">Freshly brewed coffee, pastries, made a few steps from where you live.</p>
+    <a href="{% url 'menu' %}" class="btn">See the Menu</a>
+    </div>
+    <img class="hero-image" src="{% static 'images/latte-art-coffee.jpg' %}" alt="Coffee Cup">
+    </section>  
+
+    <section class"setion">
+    <h2>Good with a morning</h2>
+    <div class"trio">
+        <div class="trio-item">
+            <img src="{% static 'images/latte-art-coffee.jpg' %}" alt="Latte Art Coffee">
+            <h3>Freshly Brewed</h3>
+            <p>We brew our coffee fresh every morning, using only the finest beans.</p>
+        </div>
+        <div class="trio-item">
+            <img src="{% static 'images/croissant.jpg' %}" alt="Croissant">
+            <h3>Delicious Pastries</h3>
+            <p>Our pastries are baked daily, perfect for pairing with your coffee.</p>
+        </div>
+        <div class="trio-item">
+            <img src="{% static 'images/iced-coffee.jpg' %}" alt="Iced Coffee">
+            <h3>Refreshing Iced Coffee</h3>
+            <p>Cool down with our refreshing iced coffee, made to order.</p>
+        </div>
+        </section>
+
+        <section class="band">
+            <h2>Visit Us</h2>
+            <p>Find us at the corner of your street, open daily from 7 AM to 8 PM.</p>
+            <a href="{% url 'contact' %}" class="btn">Contact Us</a>
+        </section>
+        {% endblock %}

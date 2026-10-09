@@ -1,8 +1,20 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Gallery | Kape Kanto{% endblock %}
 
 {% block content %}
-    <h1>Gallery</h1>
-    <p>Take a look at our coffee creations and brewing equipment.</p>
+<section class="page-head">
+  <h1>Gallery</h1>
+  <p class="lead">A look at what comes out of our coffee shop!</p>
+  </section>
+
+<section class="gallery">
+    <img class="gallery-image" src="{% static 'images/latte-art-coffee.jpg' %}" alt="Latte Art Coffee">
+    <img class="gallery-image" src="{% static 'images/espresso.jpg' %}" alt="Espresso">
+    <img class="gallery-image" src="{% static 'images/iced-coffee.jpg' %}" alt="Iced Coffee">
+    <img class="gallery-image" src="{% static 'images/croissant.jpg' %}" alt="Croissant">
+    <img class="gallery-image" src="{% static 'images/cinnamon-roll.jpg' %}" alt="Cinnamon Roll">
+    <img class="gallery-image" src="{% static 'images/chocolate-cake-slice.jpg' %}" alt="Chocolate Cake Slice">
+</section>
 {% endblock %}

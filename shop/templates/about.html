@@ -1,8 +1,39 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
+{% load static %}
 
 {% block title %}About | Kape Kanto{% endblock %}
 
 {% block content %}
-    <h1>About Kape Kanto</h1>
-    <p>We are a passionate team dedicated to providing the highest quality coffee beans and brewing equipment.</p>
+<section class="page-head">
+  <h1>About Kape Kanto</h1>
+  <p class="lead">A small shop on the corner, built for the people who pass by every day.</p>
+</section>
+
+<section class="two-column">
+  <div class="column">
+    <h2>Our Story</h2>
+    <p>Kape Kanto was founded in 2020 by a group of friends who shared a passion for coffee and community. Our mission is to provide a welcoming space where people can enjoy high-quality coffee and connect with one another.</p>
+  </div>
+  <div class="column">
+    <h2>Opening Hours</h2>
+    <table class="opening-hours">
+      <tr>
+        <th>Day</th>
+        <th>Hours</th>
+      </tr>
+      <tr>
+        <td>Monday - Friday</td>
+        <td>7:00 AM - 7:00 PM</td>
+      </tr>
+      <tr>
+        <td>Saturday</td>
+        <td>8:00 AM - 5:00 PM</td>
+      </tr>
+      <tr>
+        <td>Sunday</td>
+        <td>Closed</td>
+      </tr>
+    </table>
+  </div>
+</section>
 {% endblock %}
