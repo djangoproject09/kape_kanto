@@ -28,7 +28,7 @@ the shop's story, photos, and contact details.
 1. Clone the repository
 
 '''
-https://github.com/djangoproject09/kape_kanto.git
+git clone https://github.com/djangoproject09/kape_kanto.git
 cd kape_kanto
 '''
 
@@ -51,7 +51,7 @@ cd kape_kanto
 
 5. run the server:
 ''' 
-    python manage.py
+    python manage.py runserver
 '''
 
 6. Open htpp://127.0.0.1:8000
