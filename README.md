@@ -29,7 +29,7 @@ the shop's story, photos, and contact details.
 
 '''
 git clone https://github.com/djangoproject09/kape_kanto.git
-cd kape_kanto
+|   cd kape_kanto
 '''
 
 2. Create and activate a virtual environment:
