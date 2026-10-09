@@ -1,0 +1,12 @@
+{ % extends 'base.html' % }
+
+
+{% block content % }
+    <h1>Welcome to Kape Kanto!</h1>
+    <p>Discover the best coffee in town.</p>
+{ % endblock % }
+<body>
+    {% include 'header.html' %}
+    {% block content %}{% endblock %}
+    {% include 'footer.html' %}
+</body>
